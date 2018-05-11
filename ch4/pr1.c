@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Return the reversal of a two-digit number. Unsafe use of scanf.
+// Prints the reversal of a two-digit number. Unsafe use of scanf.
 int main(void)
 {
     int input_number, ten, single;
