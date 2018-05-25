@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+// Checks the validity of an UPC number
+// Unsafe use of scanf
 int main(void)
 {
   int check_digit, d, i1, i2, i3, i4, i5, j1, j2, j3, j4, j5,
