@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-// Calculates the check digit of a a UPC code. Unsafe use of scanf.
+// Calculates the check digit of a UPC code. Unsafe use of scanf.
 int main(void)
 {
     int d, i1, i2, i3, i4, i5, j1, j2, j3, j4, j5,
