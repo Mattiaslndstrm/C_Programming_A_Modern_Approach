@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-// Reverses a three digit number without arithmetic. Unsafe use of scanf.
+// Reverses a three digit number without arithmetic.
 int main(void)
 {
     int hundred, ten, singel;
