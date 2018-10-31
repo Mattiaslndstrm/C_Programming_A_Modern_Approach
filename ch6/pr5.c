@@ -8,10 +8,9 @@ int main(void)
     printf("Enter a number: ");
     scanf("%d", &n);
     printf("Your number reversed is: ");
-    while (n > 0)
+    for (; n > 0; n /= 10)
     {
         printf("%d", n % 10);
-        n /= 10;
     }
     printf("\n");
 }
