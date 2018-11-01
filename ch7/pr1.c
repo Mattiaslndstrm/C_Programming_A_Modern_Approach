@@ -9,14 +9,18 @@
 // The version of C that I use seems to convert i * i to an int. But since n is
 // a short it can't handle values above 32766.
 
+// A long can handle values of up to 9.22 * 10^18. Therefore it would take me
+// a long time to even print these tables. Modifying the program to only print
+// the square lets me find that the highest square a double can handle is
+// 3037000499^2 = 9223372030926249001.
+
 int main(void)
 {
-    short i, n;
+    long i, n;
     printf("This program prints a table of squares.\n");
     printf("Enter number of entries in table: ");
-    scanf("%hd", &n);
-
+    scanf("%ld", &n);
     for (i = 1; i <= n; i++)
-        printf("%12hd%12d\n", i, i * i);
+        printf("%10ld%20ld\n", n, n * n);
     return 0;
 }
