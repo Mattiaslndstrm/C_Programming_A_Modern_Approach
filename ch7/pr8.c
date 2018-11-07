@@ -14,7 +14,7 @@ int main(void)
         d = (12 * 60 + 47), e = (14 * 60), f = (15 * 60 + 45),
         g = (19 * 60), h = (21 * 60 + 45);
 
-    printf("Enter a 24-hour time: ");
+    printf("Enter a 12-hour time: ");
     scanf("%d:%d %c", &hours, &minutes, &ampm);
 
     if (toupper(ampm) == 'P')
