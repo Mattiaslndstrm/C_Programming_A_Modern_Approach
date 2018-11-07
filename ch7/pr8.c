@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 
 // Prints the closest departure time from an imaginary flight time table.
@@ -7,14 +8,18 @@
 int main(void)
 {
     int hours, minutes, min_midnight;
-    char departure[10 + 1], arrival[10 +1];
+    char departure[10 + 1], arrival[10 +1], ampm;
     // Each departure time converted to minutes since midnight.
     int a = (8 * 60), b = (9 * 60 + 43), c = (11 * 60 + 19),
         d = (12 * 60 + 47), e = (14 * 60), f = (15 * 60 + 45),
         g = (19 * 60), h = (21 * 60 + 45);
 
     printf("Enter a 24-hour time: ");
-    scanf("%d:%d", &hours, &minutes);
+    scanf("%d:%d %c", &hours, &minutes, &ampm);
+
+    if (toupper(ampm) == 'P')
+        hours += 12;
+
     min_midnight = hours * 60 + minutes;
 
     if (min_midnight < ((1440 - h + a) / 2 - 135) || (min_midnight > (g + h) / 2))
@@ -59,4 +64,5 @@ int main(void)
     }
 
     printf("Closest eparture time is %s, arriving at %s\n", departure, arrival);
+    return 0;
 }
