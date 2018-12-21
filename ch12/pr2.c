@@ -4,6 +4,7 @@
 
 #define N 100
 
+// Checks if a word is a palindrome with an array.
 int main(void)
 {
     char a[N], ch;

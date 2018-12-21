@@ -5,6 +5,7 @@
 
 void max_min (int a[], int n, int *max, int *min);
 
+// Prints the largest and smallest of N numbers with a pointer. Unsafe use of scanf
 int main(void)
 {
     int b[N], i, big, small;

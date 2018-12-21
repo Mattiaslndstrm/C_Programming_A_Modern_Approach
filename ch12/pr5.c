@@ -3,11 +3,11 @@
 #define SL 100
 
 
-// Prints the words of a sentence in reverse.
+// Prints the words of a sentence in reverse with pointers.
 int main(void)
 {
     char ch, sentence[SL], *p = sentence, *q, last = '\0';
-    int i = 0, len = 0;
+    int len = 0;
     printf("Enter a sentence: ");
     while ((ch = getchar()) != '\n' && p < sentence + SL)
         *p++ = ch;

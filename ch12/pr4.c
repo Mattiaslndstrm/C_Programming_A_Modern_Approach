@@ -4,6 +4,7 @@
 
 #define N 100
 
+// Checks if a word is a palindrome with pointers.
 int main(void)
 {
     char a[N], ch, *p = a, *q = a;

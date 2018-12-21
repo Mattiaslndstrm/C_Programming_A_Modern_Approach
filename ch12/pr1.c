@@ -2,6 +2,7 @@
 
 #define N 100
 
+// Reverses a message with arrays and pointers
 int main(void)
 {
     char a[N], ch;
@@ -16,6 +17,7 @@ int main(void)
     putchar('\n');
 }
 
+// Reverses a message with only arrays.
 int main2(void)
 {
     char a[N], ch;
